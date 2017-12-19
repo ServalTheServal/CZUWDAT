@@ -381,17 +381,147 @@ function checkVybiraci() {
 
 function zalozOtazky() {
 	pridejOtazku(
-			
+			"Který zápis odpovídá modré barvě?",
+			"#ff0000",
+			"#0000ff",
+			"#00ff00",
+			"-",
+			"#0000ff",
+			"vybiraci");
+	pridejOtazku(
+			"Který zápis odpovídá zelené barvě?",
+			"#ff0000",
+			"#0000ff",
+			"#00ff00",
+			"-",
+			"#00ff00",
+			"vybiraci");
+	pridejOtazku(
+			"Který zápis odpovídá červené barvě?",
+			"#ff0000",
+			"#0000ff",
+			"#00ff00",
+			"-",
+			"#ff0000",
+			"vybiraci");
+	pridejOtazku(
+			"Jakým způsobem se zrakově handicapovaný uživatel pohybuje tabulkou na WWW stránce pomocí hlasových nebo hmatových výstupů?",
+			"po sloupcích",
+			"po řádcích",
+			"po diagonálách",
+			"-",
+			"po řádcích",
+			"vybiraci");
+	pridejOtazku(
+			"Dle metodického návrhu Blind Friendly Web 2.3 veškeré grafické prvky, které slouží kovládání stránky, musí mít:",
+			"flashovou alternativu",
+			"textovou alternativu",
+			"JavaScript alternativu",
+			"Java alternativu",
+			"textovou alternativu",
+			"vybiraci");
+	pridejOtazku(
+			"Dle metodického návrhu Blind Friendly Web 2.3 veškeré grafické prvky, které slouží kovládání stránky, musí mít:",
+			"flashovou alternativu",
+			"textovou alternativu",
+			"grafickou alternativu",
+			"Java alternativu",
+			"textovou alternativu",
+			"vybiraci");
+	pridejOtazku(
+			"Jakým způsobem se zrakově handicapovaný uživatel pohybuje po WWW stránce pomocí hlasových nebo hmatových výstupů?",
+			"po řádcích od pravého horního rohu do pravého dolního rohu",
+			"po sloupcích od pravého horního rohu do levého dolního rohu",
+			"po řádcích od levého horního rohu do pravého dolního rohu",
+			"po sloupcích od levého horního rohu do pravého dolního rohu",
+			"po řádcích od levého horního rohu do pravého dolního rohu",
+			"vybiraci");
+	pridejOtazku(
+			"Která instituce (konsorcium) stanovuje standardy pro WWW?",
+			"IEEE",
+			"ISO",
+			"W3C",
+			"ISOC",
+			"W3C",
+			"vybiraci");
+	pridejOtazku(
+			"Která instituce (konsorcium) stanovuje standardy pro WWW?",
+			"IEEE",
+			"ISO",
+			"W3C",
+			"IAB",
+			"W3C",
+			"vybiraci");
+	pridejOtazku(
+			"Jaká je obecná syntaxe CSS (Cascading Style Sheets)",
+			"hodnoty od vlastností jsou odděleny pomlčkou, vlastni navzájem jsou odděleny dvojtečkou, viz. vlastnost1 – hodnota: vlastnost2 – hodnota:",
+			"hodnoty od vlastností jsou odděleny středníkem, vlastni navzájem jsou odděleny dvojtečkou, viz. vlastnost1; hodnota: vlastnost2; hodnota:",
+			"hodnoty od vlastností jsou odděleny dvojtečkou, vlastni navzájem jsou odděleny středníkem, viz. vlastnost1: hodnota; vlastnost2: hodnota;",
+			"hodnoty od vlastností jsou odděleny pomlčkou, vlastni navzájem jsou odděleny středníkem, viz. vlastnost1 – hodnota; vlastnost2 – hodnota;",
+			"hodnoty od vlastností jsou odděleny dvojtečkou, vlastni navzájem jsou odděleny středníkem, viz. vlastnost1: hodnota; vlastnost2: hodnota;",
+			"vybiraci");
+	pridejOtazku(
+			"Každá WWW stránka by měla mít své hlavní sdělení:",
+			"na začátku",
+			"ve 2/3 stránky",
+			"na konci",
+			"v polovině stránky",
+			"na začátku",
+			"vybiraci");
+	pridejOtazku(
+			"Jaké deklarování stylopisu je z hlediska Web Site nejvýhodnější?",
+			"přímo v textu zdroje u formátovaného elementu pomocí atributu style",
+			"použitím externího stylopisu – externího souboru *.css, na který se stránka odkazuje tagem \<link …. \/\>",
+			"",
+			"",
+			"",
+			"vybiraci");
+	pridejOtazku(
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"vybiraci");
+	pridejOtazku(
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"vybiraci");
+	
+	
+	
+	/*
+	pridejOtazku(
+			"",
+			"",
+			"",
+			"",
+			"",
+			"abcd",
+			"zaskrtavaci");
+	pridejOtazku(
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"vybiraci");*/
 	}
 
 function pridejOtazku(otazka, a, b, c, d, odpoved, typ) {
 	var q = {
-		a: a,
-		b: b,
-		c: c,
-		d: d,
-		otazka: otazka,
-		odpoved: odpoved,
+		a: escape(a),
+		b: escape(b),
+		c: escape(c),
+		d: escape(d),
+		otazka: escape(otazka),
+		odpoved: escape(odpoved),
 		typ: typ
 	};
 
