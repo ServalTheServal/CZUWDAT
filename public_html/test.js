@@ -1717,7 +1717,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"abd",
+			"ab",
 			"zaskrtavaci");
 	pridejOtazku(
 			"[?] Mezi server side technologie patří ?",
