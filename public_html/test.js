@@ -2529,7 +2529,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"",
+			"používat jednotnou formu odkazů",
 			"vybiraci");
 	pridejOtazku(
 			"[C] Dle metody návrhu zásad přístupnosti pro barvy popředí a pozadí? ",
