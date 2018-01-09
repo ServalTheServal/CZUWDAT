@@ -1791,7 +1791,7 @@ function zalozOtazky() {
 			"zaskrtavaci");
 	pridejOtazku(
 			"Který zápis barvy v CSS odpovídá zelené barvě ? ",
-			"#00ff00",
+			"#0000ff",
 			"#0f0",
 			"#f00",
 			"#ff0000",
