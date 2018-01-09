@@ -2403,7 +2403,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"",
+			"Značkovací jazyk pro uchovávání strukturovaných a semistrukturovaných dat",
 			"vybiraci");
 	pridejOtazku(
 			"[C] Co je z uvedené části kodu vlastnost kaskádových stylů <p style=“color: #00ff00;font-style:italic;“>text</p>?",
