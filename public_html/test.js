@@ -2183,7 +2183,7 @@ function zalozOtazky() {
 			"vybiraci");
 	pridejOtazku(
 			"[C] Co je protokol HTTP (HyperText Transfer Protocol) ",
-			"jednoduchý přenosový protokol, který funguje bezstavově ",
+			"jednoduchý přenosový protokol, který funguje bezstavově",
 			"jednoduchý přenosový protokol, který funguje stavově  ",
 			"jednosměrný přenosový protokol, který funguje bezstavově  ",
 			"jednosměrný přenosový protokol, který funguje stavově",
