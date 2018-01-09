@@ -2109,7 +2109,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"cz, .sk, .uk, .pl, .hr, .no, .us",
+			".cz, .sk, .uk, .pl, .hr, .no, .us",
 			"vybiraci");
 	pridejOtazku(
 			"[C] Co to je centrální registr doménových jmen v doméně .cz",
