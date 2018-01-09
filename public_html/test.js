@@ -104,22 +104,22 @@ function nactiOtazku() {
 					str2 += '<br><input id="d" type="radio" name="a" value="a">' + '<span id="dd"> ' + otazka.d + '</span>';
 					break;
 				case 4:
-					str2 += '<br><input id="e" type="radio" name="a" value="a">' + '<span id="dd"> ' + otazka.e + '</span>';
+					str2 += '<br><input id="e" type="radio" name="a" value="a">' + '<span id="ee"> ' + otazka.e + '</span>';
 					break;
 				case 5:
-					str2 += '<br><input id="f" type="radio" name="a" value="a">' + '<span id="dd"> ' + otazka.f + '</span>';
+					str2 += '<br><input id="f" type="radio" name="a" value="a">' + '<span id="ff"> ' + otazka.f + '</span>';
 					break;
 				case 6:
-					str2 += '<br><input id="g" type="radio" name="a" value="a">' + '<span id="dd"> ' + otazka.g + '</span>';
+					str2 += '<br><input id="g" type="radio" name="a" value="a">' + '<span id="gg"> ' + otazka.g + '</span>';
 					break;
 				case 7:
-					str2 += '<br><input id="h" type="radio" name="a" value="a">' + '<span id="dd"> ' + otazka.h + '</span>';
+					str2 += '<br><input id="h" type="radio" name="a" value="a">' + '<span id="hh"> ' + otazka.h + '</span>';
 					break;
 				case 8:
-					str2 += '<br><input id="i" type="radio" name="a" value="a">' + '<span id="dd"> ' + otazka.i + '</span>';
+					str2 += '<br><input id="i" type="radio" name="a" value="a">' + '<span id="ii"> ' + otazka.i + '</span>';
 					break;
 				case 9:
-					str2 += '<br><input id="j" type="radio" name="a" value="a">' + '<span id="dd"> ' + otazka.j + '</span>';
+					str2 += '<br><input id="j" type="radio" name="a" value="a">' + '<span id="jj"> ' + otazka.j + '</span>';
 					break;
 			}
 		} else
@@ -252,7 +252,7 @@ function checkZaskrtavaci() {
 			ok = false;
 		}
 	}
-	if (otazka.odpoved.indexOf("d") > -1 && numberOfAnswers > 3) {
+	if (numberOfAnswers > 3 && otazka.odpoved.indexOf("d") > -1) {
 		if (document.getElementById("d").checked == true) {
 			document.getElementById("dd").style.backgroundColor = 'LightGreen';
 		} else {
@@ -265,7 +265,7 @@ function checkZaskrtavaci() {
 			ok = false;
 		}
 	}
-	if (otazka.odpoved.indexOf("e") > -1 && numberOfAnswers > 4) {
+	if (numberOfAnswers > 4 && otazka.odpoved.indexOf("e") > -1) {
 		if (document.getElementById("e").checked == true) {
 			document.getElementById("ee").style.backgroundColor = 'LightGreen';
 		} else {
@@ -273,12 +273,12 @@ function checkZaskrtavaci() {
 			ok = false;
 		}
 	} else {
-		if (document.getElementById("e").checked == true) {
+		if (numberOfAnswers > 4 && document.getElementById("e").checked == true) {
 			document.getElementById("ee").style.backgroundColor = 'LightCoral';
 			ok = false;
 		}
 	}
-	if (otazka.odpoved.indexOf("f") > -1 && numberOfAnswers > 5) {
+	if (numberOfAnswers > 5 && otazka.odpoved.indexOf("f") > -1) {
 		if (document.getElementById("f").checked == true) {
 			document.getElementById("ff").style.backgroundColor = 'LightGreen';
 		} else {
@@ -286,12 +286,12 @@ function checkZaskrtavaci() {
 			ok = false;
 		}
 	} else {
-		if (document.getElementById("f").checked == true) {
+		if (numberOfAnswers > 5 && document.getElementById("f").checked == true) {
 			document.getElementById("ff").style.backgroundColor = 'LightCoral';
 			ok = false;
 		}
 	}
-	if (otazka.odpoved.indexOf("g") > -1 && numberOfAnswers > 6) {
+	if (numberOfAnswers > 6 && otazka.odpoved.indexOf("g") > -1) {
 		if (document.getElementById("g").checked == true) {
 			document.getElementById("gg").style.backgroundColor = 'LightGreen';
 		} else {
@@ -299,12 +299,12 @@ function checkZaskrtavaci() {
 			ok = false;
 		}
 	} else {
-		if (document.getElementById("g").checked == true) {
+		if (numberOfAnswers > 6 && document.getElementById("g").checked == true) {
 			document.getElementById("gg").style.backgroundColor = 'LightCoral';
 			ok = false;
 		}
 	}
-	if (otazka.odpoved.indexOf("h") > -1 && numberOfAnswers > 7) {
+	if (numberOfAnswers > 7 && otazka.odpoved.indexOf("h") > -1) {
 		if (document.getElementById("h").checked == true) {
 			document.getElementById("hh").style.backgroundColor = 'LightGreen';
 		} else {
@@ -312,12 +312,12 @@ function checkZaskrtavaci() {
 			ok = false;
 		}
 	} else {
-		if (document.getElementById("h").checked == true) {
+		if (numberOfAnswers > 7 && document.getElementById("h").checked == true) {
 			document.getElementById("hh").style.backgroundColor = 'LightCoral';
 			ok = false;
 		}
 	}
-	if (otazka.odpoved.indexOf("i") > -1 && numberOfAnswers > 8) {
+	if (numberOfAnswers > 8 && otazka.odpoved.indexOf("i") > -1) {
 		if (document.getElementById("i").checked == true) {
 			document.getElementById("ii").style.backgroundColor = 'LightGreen';
 		} else {
@@ -325,12 +325,12 @@ function checkZaskrtavaci() {
 			ok = false;
 		}
 	} else {
-		if (document.getElementById("i").checked == true) {
+		if (numberOfAnswers > 8 && document.getElementById("i").checked == true) {
 			document.getElementById("ii").style.backgroundColor = 'LightCoral';
 			ok = false;
 		}
 	}
-	if (otazka.odpoved.indexOf("j") > -1 && numberOfAnswers > 9) {
+	if (numberOfAnswers > 9 && otazka.odpoved.indexOf("j") > -1) {
 		if (document.getElementById("j").checked == true) {
 			document.getElementById("jj").style.backgroundColor = 'LightGreen';
 		} else {
@@ -338,7 +338,7 @@ function checkZaskrtavaci() {
 			ok = false;
 		}
 	} else {
-		if (document.getElementById("j").checked == true) {
+		if (numberOfAnswers > 9 && document.getElementById("j").checked == true) {
 			document.getElementById("jj").style.backgroundColor = 'LightCoral';
 			ok = false;
 		}
@@ -347,32 +347,32 @@ function checkZaskrtavaci() {
 	if (document.getElementById("a").checked == false &&
 			document.getElementById("b").checked == false &&
 			document.getElementById("c").checked == false &&
-			document.getElementById("d").checked == false &&
-			document.getElementById("e").checked == false &&
-			document.getElementById("f").checked == false &&
-			document.getElementById("g").checked == false &&
-			document.getElementById("h").checked == false &&
-			document.getElementById("i").checked == false &&
-			document.getElementById("j").checked == false) {
+			((numberOfAnswers > 3 && document.getElementById("d").checked == false) || numberOfAnswers < 4) &&
+			((numberOfAnswers > 4 && document.getElementById("e").checked == false) || numberOfAnswers < 5) &&
+			((numberOfAnswers > 5 && document.getElementById("f").checked == false) || numberOfAnswers < 6) &&
+			((numberOfAnswers > 6 && document.getElementById("g").checked == false) || numberOfAnswers < 7) &&
+			((numberOfAnswers > 7 && document.getElementById("h").checked == false) || numberOfAnswers < 8) &&
+			((numberOfAnswers > 8 && document.getElementById("i").checked == false) || numberOfAnswers < 9) &&
+			((numberOfAnswers > 9 && document.getElementById("j").checked == false) || numberOfAnswers < 10)) {
 		if (otazka.odpoved.indexOf("b") > -1)
 			document.getElementById("bb").style.backgroundColor = 'LightGreen';
 		if (otazka.odpoved.indexOf("c") > -1)
 			document.getElementById("cc").style.backgroundColor = 'LightGreen';
-		if (otazka.odpoved.indexOf("d") > -1)
+		if (numberOfAnswers > 3 && otazka.odpoved.indexOf("d") > -1)
 			document.getElementById("dd").style.backgroundColor = 'LightGreen';
 		if (otazka.odpoved.indexOf("a") > -1)
 			document.getElementById("aa").style.backgroundColor = 'LightGreen';
-		if (otazka.odpoved.indexOf("e") > -1)
+		if (numberOfAnswers > 4 && otazka.odpoved.indexOf("e") > -1)
 			document.getElementById("ee").style.backgroundColor = 'LightGreen';
-		if (otazka.odpoved.indexOf("f") > -1)
+		if (numberOfAnswers > 5 && otazka.odpoved.indexOf("f") > -1)
 			document.getElementById("ff").style.backgroundColor = 'LightGreen';
-		if (otazka.odpoved.indexOf("g") > -1)
+		if (numberOfAnswers > 6 && otazka.odpoved.indexOf("g") > -1)
 			document.getElementById("gg").style.backgroundColor = 'LightGreen';
-		if (otazka.odpoved.indexOf("h") > -1)
+		if (numberOfAnswers > 7 && otazka.odpoved.indexOf("h") > -1)
 			document.getElementById("hh").style.backgroundColor = 'LightGreen';
-		if (otazka.odpoved.indexOf("i") > -1)
+		if (numberOfAnswers > 8 && otazka.odpoved.indexOf("i") > -1)
 			document.getElementById("ii").style.backgroundColor = 'LightGreen';
-		if (otazka.odpoved.indexOf("j") > -1)
+		if (numberOfAnswers > 9 && otazka.odpoved.indexOf("j") > -1)
 			document.getElementById("jj").style.backgroundColor = 'LightGreen';
 		ok = false;
 	}
@@ -387,19 +387,19 @@ function checkZaskrtavaci() {
 			pismenoSpravne.push(document.getElementById("b").value);
 		if (otazka.odpoved.indexOf("c") > -1)
 			pismenoSpravne.push(document.getElementById("c").value);
-		if (otazka.odpoved.indexOf("d") > -1)
+		if (numberOfAnswers > 3 && otazka.odpoved.indexOf("d") > -1)
 			pismenoSpravne.push(document.getElementById("d").value);
-		if (otazka.odpoved.indexOf("e") > -1)
+		if (numberOfAnswers > 4 && otazka.odpoved.indexOf("e") > -1)
 			pismenoSpravne.push(document.getElementById("e").value);
-		if (otazka.odpoved.indexOf("f") > -1)
+		if (numberOfAnswers > 5 && otazka.odpoved.indexOf("f") > -1)
 			pismenoSpravne.push(document.getElementById("f").value);
-		if (otazka.odpoved.indexOf("g") > -1)
+		if (numberOfAnswers > 6 && otazka.odpoved.indexOf("g") > -1)
 			pismenoSpravne.push(document.getElementById("g").value);
-		if (otazka.odpoved.indexOf("h") > -1)
+		if (numberOfAnswers > 7 && otazka.odpoved.indexOf("h") > -1)
 			pismenoSpravne.push(document.getElementById("h").value);
-		if (otazka.odpoved.indexOf("i") > -1)
+		if (numberOfAnswers > 8 && otazka.odpoved.indexOf("i") > -1)
 			pismenoSpravne.push(document.getElementById("i").value);
-		if (otazka.odpoved.indexOf("j") > -1)
+		if (numberOfAnswers > 9 && otazka.odpoved.indexOf("j") > -1)
 			pismenoSpravne.push(document.getElementById("j").value);
 		pismenoSpravne.sort();
 
@@ -524,7 +524,7 @@ function checkVybiraci() {
 			spatne++;
 			spatneOtazky.push(otazka);
 		}
-	} else if (document.getElementById("d").checked == true) {
+	} else if (numberOfAnswers > 3 && document.getElementById("d").checked == true) {
 		if (otazka.d == otazka.odpoved) {
 			document.getElementById("check").innerHTML = '<p style="color:green">Správná odpověď</p>';
 			spravne++;
@@ -534,7 +534,7 @@ function checkVybiraci() {
 				document.getElementById("bb").style.backgroundColor = 'LightGreen';
 			else if (otazka.c == otazka.odpoved)
 				document.getElementById("cc").style.backgroundColor = 'LightGreen';
-			else if (otazka.a == otazka.odpoved && numberOfAnswers > 3)
+			else if (otazka.a == otazka.odpoved)
 				document.getElementById("aa").style.backgroundColor = 'LightGreen';
 			else if (otazka.e == otazka.odpoved && numberOfAnswers > 4)
 				document.getElementById("ee").style.backgroundColor = 'LightGreen';
@@ -554,7 +554,7 @@ function checkVybiraci() {
 			spatne++;
 			spatneOtazky.push(otazka);
 		}
-	} else if (document.getElementById("e").checked == true) {
+	} else if (numberOfAnswers > 4 && document.getElementById("e").checked == true) {
 		if (otazka.e == otazka.odpoved) {
 			document.getElementById("check").innerHTML = '<p style="color:green">Správná odpověď</p>';
 			spravne++;
@@ -584,7 +584,7 @@ function checkVybiraci() {
 			spatne++;
 			spatneOtazky.push(otazka);
 		}
-	} else if (document.getElementById("f").checked == true) {
+	} else if (numberOfAnswers > 5 && document.getElementById("f").checked == true) {
 		if (otazka.f == otazka.odpoved) {
 			document.getElementById("check").innerHTML = '<p style="color:green">Správná odpověď</p>';
 			spravne++;
@@ -614,7 +614,7 @@ function checkVybiraci() {
 			spatne++;
 			spatneOtazky.push(otazka);
 		}
-	} else if (document.getElementById("g").checked == true) {
+	} else if (numberOfAnswers > 6 && document.getElementById("g").checked == true) {
 		if (otazka.g == otazka.odpoved) {
 			document.getElementById("check").innerHTML = '<p style="color:green">Správná odpověď</p>';
 			spravne++;
@@ -644,7 +644,7 @@ function checkVybiraci() {
 			spatne++;
 			spatneOtazky.push(otazka);
 		}
-	} else if (document.getElementById("h").checked == true) {
+	} else if (numberOfAnswers > 7 && document.getElementById("h").checked == true) {
 		if (otazka.h == otazka.odpoved) {
 			document.getElementById("check").innerHTML = '<p style="color:green">Správná odpověď</p>';
 			spravne++;
@@ -674,7 +674,7 @@ function checkVybiraci() {
 			spatne++;
 			spatneOtazky.push(otazka);
 		}
-	} else if (document.getElementById("i").checked == true) {
+	} else if (numberOfAnswers > 8 && document.getElementById("i").checked == true) {
 		if (otazka.i == otazka.odpoved) {
 			document.getElementById("check").innerHTML = '<p style="color:green">Správná odpověď</p>';
 			spravne++;
@@ -704,7 +704,7 @@ function checkVybiraci() {
 			spatne++;
 			spatneOtazky.push(otazka);
 		}
-	} else if (document.getElementById("j").checked == true) {
+	} else if (numberOfAnswers > 9 && document.getElementById("j").checked == true) {
 		if (otazka.j == otazka.odpoved) {
 			document.getElementById("check").innerHTML = '<p style="color:green">Správná odpověď</p>';
 			spravne++;
@@ -735,14 +735,14 @@ function checkVybiraci() {
 			spatneOtazky.push(otazka);
 		}
 	} else {
-		if (otazka.j == otazka.odpoved)
-			document.getElementById("jj").style.backgroundColor = 'LightCoral';
+		if (otazka.a == otazka.odpoved)
+			document.getElementById("aa").style.backgroundColor = 'LightCoral';
 		else if (otazka.b == otazka.odpoved)
 			document.getElementById("bb").style.backgroundColor = 'LightGreen';
 		else if (otazka.c == otazka.odpoved)
 			document.getElementById("cc").style.backgroundColor = 'LightGreen';
-		else if (otazka.a == otazka.odpoved && numberOfAnswers > 3)
-			document.getElementById("aa").style.backgroundColor = 'LightGreen';
+		else if (otazka.d == otazka.odpoved && numberOfAnswers > 3)
+			document.getElementById("dd").style.backgroundColor = 'LightGreen';
 		else if (otazka.e == otazka.odpoved && numberOfAnswers > 4)
 			document.getElementById("ee").style.backgroundColor = 'LightGreen';
 		else if (otazka.f == otazka.odpoved && numberOfAnswers > 5)
@@ -753,8 +753,8 @@ function checkVybiraci() {
 			document.getElementById("hh").style.backgroundColor = 'LightGreen';
 		else if (otazka.i == otazka.odpoved && numberOfAnswers > 8)
 			document.getElementById("ii").style.backgroundColor = 'LightGreen';
-		else if (otazka.d == otazka.odpoved && numberOfAnswers > 9)
-			document.getElementById("dd").style.backgroundColor = 'LightGreen';
+		else if (otazka.j == otazka.odpoved && numberOfAnswers > 9)
+			document.getElementById("jj").style.backgroundColor = 'LightGreen';
 		document.getElementById("check").innerHTML = '<p style="color:red">Špatně!</p>' +
 				'Správná odpověď je: ' + otazka.odpoved;
 		spatne++;
