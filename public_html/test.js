@@ -1115,7 +1115,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"",
+			"Kde je daný objekt umístěn",
 			"vybiraci");
 	pridejOtazku(
 			'Co je z uvedené části kódu hodnota vlastnosti kaskádových stylů? <p style="color: #00ff00;">text</p>',
@@ -1129,7 +1129,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"",
+			"color",
 			"vybiraci");
 	pridejOtazku(
 			'Co je z uvedené části kódu vlastnost kaskádových stylů? <p style="color: #00ff00;">text</p>',
@@ -1339,7 +1339,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"",
+			"8bitů",
 			"vybiraci");
 	pridejOtazku(
 			"Co jsou domény 1. řádu?",
@@ -1549,7 +1549,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"",
+			"#rrggbb",
 			"vybiraci");
 	pridejOtazku(
 			"Kolik osob v ČR žije s těžkým zrakovým postižením?",
@@ -2025,7 +2025,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"",
+			"GIF",
 			"vybiraci");
 	pridejOtazku(
 			"[C] Jakým číslem odpovědí HTTP začínají odpovědi s chybou na straně serveru?",
@@ -2544,6 +2544,20 @@ function zalozOtazky() {
 			"",
 			"",
 			"Dostatečný rozdíl barev (min 500 z 756)",
+			"vybiraci");
+	pridejOtazku(
+			"[C] doména nejvyššího rádu ",
+			"TLD",
+			"gTLD",
+			"ccTLD ",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"TLD",
 			"vybiraci");
 
 
