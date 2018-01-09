@@ -1759,8 +1759,8 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"d",
-			"zaskrtavaci");
+			"značkovací jazyk zaměřený na sémantiku",
+			"vybiraci");
 	pridejOtazku(
 			"[?] Co je hustota klíčových slov ?",
 			"počet klíčových slov na stránce / celkový počet slov na stránce",
@@ -2211,7 +2211,7 @@ function zalozOtazky() {
 			"vybiraci");
 	pridejOtazku(
 			"[C] Co je to den expirace doménového jména?",
-			" Den následující po dni, ve kterém dojde k uplynutí doby, na kterou bylo doménové jméno zaregistrováno",
+			"Den následující po dni, ve kterém dojde k uplynutí doby, na kterou bylo doménové jméno zaregistrováno",
 			"Vymazání a trvalá blokace registrovaného doménového jména",
 			"Vymazání dočasně zapsaného jména vlastníka doménového jména",
 			"",
@@ -2221,7 +2221,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			" Den následující po dni, ve kterém dojde k uplynutí doby, na kterou bylo doménové jméno zaregistrováno",
+			"Den následující po dni, ve kterém dojde k uplynutí doby, na kterou bylo doménové jméno zaregistrováno",
 			"vybiraci");
 	pridejOtazku(
 			"[C] Co je to DHTML?",
@@ -2761,7 +2761,7 @@ function zalozOtazky() {
 			"Seznam",
 			"Bing",
 			"Yahoo",
-			"PornHub",
+			"Ten na PornHub",
 			"",
 			"",
 			"",
