@@ -1003,7 +1003,7 @@ function zalozOtazky() {
 			"<strong>",
 			"<ul>",
 			"<a>",
-			"<img />",
+			"<img>",
 			"vybiraci");
 	pridejOtazku(
 			"Jaká HTML značka popisuje tučný text (zesílený text)",
@@ -1731,7 +1731,7 @@ function zalozOtazky() {
 			"",
 			"",
 			"",
-			"bc",
+			"be",
 			"zaskrtavaci");
 	pridejOtazku(
 			"Které barvy jsou doplňkovými barvami aditivního modelu ?",
@@ -2447,6 +2447,104 @@ function zalozOtazky() {
 			"",
 			"ab",
 			"zaskrtavaci");
+	pridejOtazku(
+			"[C] Co jsou gTLD?",
+			".com, .org, .info ",
+			".cz, .sk, .uk",
+			".arpa, .root",
+			"czu.cz, idnes.cz, seznam.cz",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			".com, .org, .info ",
+			"vybiraci");
+	pridejOtazku(
+			"[C] Ve které zemi vzniklo WWW? ",
+			"Švýcarsko",
+			"Švédsko",
+			"Japonsko",
+			"Německo",
+			"USA",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"Švýcarsko",
+			"vybiraci");
+	pridejOtazku(
+			"[C] z hlediska technologie je na straně klienta ",
+			"JavaScript",
+			"MySQL",
+			"PHP",
+			"ASP.NET",
+			"JSP",
+			"PostgreSQL",
+			"",
+			"",
+			"",
+			"",
+			"JavaScript",
+			"vybiraci");
+	pridejOtazku(
+			"[C] Co nejvíce ovlivňuje SEO",
+			"title",
+			"style",
+			"délka textu",
+			"množství obrázků",
+			"script",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"title",
+			"vybiraci");
+	pridejOtazku(
+			"[C] Co se píše v CSS mezi hodnotou, vlastnostma a za?",
+			'":" a ";"',
+			'":" a ","',
+			'";" a ","',
+			'":" a "."',
+			'"." a ";"',
+			"",
+			"",
+			"",
+			"",
+			"",
+			'":" a ";"',
+			"vybiraci");
+	pridejOtazku(
+			"[C] Co platí při tvorbě zpětných odkazů?",
+			"používat jednotnou formu odkazů",
+			"využít grafiky pro zvýraznění",
+			"využít přesměrování přes providera",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"vybiraci");
+	pridejOtazku(
+			"[C] Dle metody návrhu zásad přístupnosti pro barvy popředí a pozadí? ",
+			"Pouze černá na bílém.",
+			"Dostatečný rozdíl barev (min 500 z 756)",
+			"Dostatečný rozdíl barev (min 400 z 756)",
+			"Dostatečný rozdíl barev (min 425 z 756)",
+			"Dostatečný rozdíl barev (min 700 z 756)",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"Dostatečný rozdíl barev (min 500 z 756)",
+			"vybiraci");
 
 
 
