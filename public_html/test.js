@@ -1396,7 +1396,7 @@ function zalozOtazky() {
 		"vybiraci");
 	pridejOtazku(
 		"Co je to „Den registrace“ doménového jména v doméně .cz?",
-		"den, ve kterém dojde k zaregistrování Doménového jména v Centrálním registrudoménových jmen",
+		"den, ve kterém dojde k zaregistrování Doménového jména v Centrálním registru doménových jmen",
 		"den následující po dni, ve kterém dojde k uplynutí doby, na kterou bylo Doménové jméno zaregistrováno",
 		"den, ve kterém dojde k objednání doménového jména u registrátora doménových jmen",
 		"registrované Doménové jméno o němž CZ.NIC vede záznam na primárním jmenném serveru",
