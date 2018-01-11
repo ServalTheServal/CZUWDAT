@@ -1134,13 +1134,13 @@ function zalozOtazky() {
 		"color",
 		"#00ff00",
 		"style",
+		"color: #00ff00;",
 		"",
 		"",
 		"",
 		"",
 		"",
-		"",
-		"color",
+		"color: #00ff00;",
 		"vybiraci");
 	pridejOtazku(
 		"Jak se nazývala síť, která je považována za předchůdce internetu?",
@@ -1896,13 +1896,13 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"???",
+		"ano",
 		"vybiraci");
 	pridejOtazku(
 		"[???] jak pracují s počítačí nebo SW handicapovaní uživatele",
-		"mohou k ovládání počítače používat mouze myš",
-		"mohou k ovládání počítač jen pomoci klavesnice",
-		"mohou ovladate SW jen pomoci klavesnice",
+		"např. mohou k ovládání počítače používat mouze myš",
+		"např. mohou k ovládání počítač jen pomoci klavesnice",
+		"např. mohou ovladate SW jen pomoci klavesnice",
 		"nemůžou mit nastaveny vysoky barevny kontrast",
 		"",
 		"",
@@ -1910,8 +1910,8 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"???",
-		"vybiraci");
+		"abc",
+		"zaskrtavaci");
 	pridejOtazku(
 		"[?] Co to je Hypertext?",
 		"Zakladni komponenta objektového modelu dokumentu – webove stranky",
@@ -2409,12 +2409,12 @@ function zalozOtazky() {
 		"italic",
 		"00ff00",
 		"<p>",
+		"color: #00ff00; font-style:italic;",
 		"",
 		"",
 		"",
 		"",
-		"",
-		"color",
+		"color: #00ff00; font-style:italic;",
 		"vybiraci");
 	pridejOtazku(
 		"[C] Co je z uvedené části kodu HTML tag <p style=“color: #00ff00; font-style:italic;“>text</p>?",
