@@ -2960,7 +2960,7 @@ function zalozOtazky() {
 		".root",
 		".usa",
 		"",
-		"cd",
+		"de",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Sdílený webhosting",
