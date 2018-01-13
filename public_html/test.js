@@ -2977,20 +2977,6 @@ function zalozOtazky() {
 		"základní typ webhostingu, kde uživatel provozuje jednu doménu 2. řádu",
 		"vybiraci");
 	pridejOtazku(
-		"",
-		"základní typ webhostingu, kde uživatel provozuje jednu doménu 2. řádu",
-		"hosting většího počtu domén",
-		"virtualizovaný stroj, který nabízí velkou konfigurovatelnost a větší výkon",
-		"poskytovatel pronajme zákazníkovi vlastní server, o který se zároveň i stará jeho technická podpora",
-		"podnájem serveru, který spravuje sám zákazník",
-		"umístění vlastního stroje do telehousu poskytovatele",
-		"Vlastní server ve vlastních prostorách",
-		"",
-		"",
-		"",
-		"",
-		"vybiraci");
-	pridejOtazku(
 		"Multihosting",
 		"základní typ webhostingu, kde uživatel provozuje jednu doménu 2. řádu",
 		"hosting většího počtu domén",
@@ -3005,7 +2991,7 @@ function zalozOtazky() {
 		"hosting většího počtu domén",
 		"vybiraci");
 	pridejOtazku(
-		"",
+		"Serverhousing",
 		"základní typ webhostingu, kde uživatel provozuje jednu doménu 2. řádu",
 		"hosting většího počtu domén",
 		"virtualizovaný stroj, který nabízí velkou konfigurovatelnost a větší výkon",
@@ -3019,7 +3005,7 @@ function zalozOtazky() {
 		"umístění vlastního stroje do telehousu poskytovatele",
 		"vybiraci");
 	pridejOtazku(
-		"",
+		"HomeServer",
 		"základní typ webhostingu, kde uživatel provozuje jednu doménu 2. řádu",
 		"hosting většího počtu domén",
 		"virtualizovaný stroj, který nabízí velkou konfigurovatelnost a větší výkon",
