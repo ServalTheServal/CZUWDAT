@@ -2,10 +2,11 @@
 
 <html>
     <head>
-	<title>Web Design | Info</title>
+	<title>WebDesign | Test 2</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+
 	    body {
 		margin-left:auto;
 		margin-right:auto;
@@ -17,6 +18,7 @@
 
 		height: 100%;
 
+		padding-bottom: 50px
 	    }
 
 	    div.pad {
@@ -56,25 +58,26 @@
 		background-color: #4CAF50;
 	    }
 	</style>
+	<script src="test.js"></script>
     </head>
     <body>
 	<ul class="nav">
-	    <li class="nav"><a class="active" href="index.html">Info</a></li>
+	    <li class="nav"><a href="index.html">Info</a></li>
 	    <li class="nav"><a href="test.html">Test</a></li>
-	    <li class="nav"><a href="testNew.html">Nový test</a></li>
+	    <li class="nav"><a class="active" href="testNew.html">Nový test</a></li>
 	</ul>
 	<div class='pad'>
-	    <h1>Web Design - zkouškový test</h1>
-	    <strong>INFO:</strong>
-	    <p>
-		Zdroje povětšinou obsahují pouze otázku - odpověď. Takže zbylé špatné odpovědi jsem si musel vymyslet [C].
-	    </p>
-	    
-	    <p>Jestli najdete nějakou chybu, hoďte to na FB.</p>
-	    <p>Jestli máte další testy, ze kterých by se daly vzít otázky, hoďte to na FB.</p>
-	    <h2>Doufám, že se všichni poučili z minulého roku a nebudou test odevzdávat po několika minutách (samozřejmě pokud budou otázky jiný a nebudete nic vědět, tak to je jiná ☺ ). <br>Pokud jim to zase odevzdá 10 lidí během 5 minut, otázky zas změní. <br>Nerad bych přišel někdy v lednu na zkoušku a zjistil, že kvůli nějakým idiotům, co nedokážou pět minut počkat, budu mít otázky, který nikdo nikdy neviděl ☻</h2>
-	    
-	</div>
+	    <h1>Test</h1>
 
+	    <span id="start"><button onclick="start()">Start</button></span>
+
+	    <p style="visibility: hidden" id="otazkaCislo"></p>
+	    <p style="visibility: hidden" id="otazka"></p>
+	    <br>
+
+	    <p id="check"></p>
+
+	    <button style="visibility:hidden" id="dalsi" type="button" onclick= nactiOtazku()>Další</button>
+	</div>
     </body>
 </html>
