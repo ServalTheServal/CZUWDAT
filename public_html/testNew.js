@@ -1562,6 +1562,20 @@ function zalozOtazky() {
 		"",
 		"",
 		"vybiraci");
+	pridejOtazku(
+		'Kolik uzlů měla původní sít která je požadovaná za předchůdce dnešního internetu (původně vypsání konkrétního čísla)',
+		"27",
+		"1",
+		"255",
+		"3",
+		"256",
+		"5",
+		"6",
+		"2.5",
+		"16",
+		"",
+		"",
+		"vybiraci");
 
 
 
