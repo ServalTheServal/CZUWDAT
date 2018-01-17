@@ -790,11 +790,11 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Schopnost vykreslovat objekty různých typů",
 		"vybiraci");
 	pridejOtazku(
 		"Co to je konverze (konverzní poměr)?",
-		"Pocet uživatelů kteří „došli“ k určité mému cíli vůči celkovému počtu uživatelů, kteří (?)",
+		"Pocet uživatelů kteří „došli“ k určité mému cíli vůči celkovému počtu uživatelů, kteří (? to asi neudělali)",
 		"Počet zpětných odkazů vůči celkovému počtu odkazů na webu",
 		"Počet klíčových slov vůči celkovému počtu klíčových slov na webové stránce",
 		"",
@@ -804,10 +804,10 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Pocet uživatelů kteří „došli“ k určité mému cíli vůči celkovému počtu uživatelů, kteří (? to asi neudělali)",
 		"vybiraci");
 	pridejOtazku(
-		"Ktery graficky format je nekomprimovany",
+		"[?] Ktery graficky format je nekomprimovany",
 		"JPEG",
 		"PNG",
 		"TIFF",
@@ -818,7 +818,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"GIF",
 		"vybiraci");
 	pridejOtazku(
 		"Ve kterém státě byla navržena technologie WWW",
@@ -832,10 +832,10 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Švýracsko",
 		"vybiraci");
 	pridejOtazku(
-		"Pro klikají mapy z hlediska přístupnosti webu pro zrakově handicapované uživatele platí",
+		"[?] Pro klikají mapy z hlediska přístupnosti webu pro zrakově handicapované uživatele platí",
 		"Odečítače obrazovky disponující efektivním čtením klikacích map, dodatečné informace o odkazech nejsou potřebné",
 		"Barevná kombinace klikací mapy není důležitá",
 		"Každý odkaz klikací mapy nese informaci o odkazu",
@@ -846,7 +846,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Každý odkaz klikací mapy nese informaci o odkazu",
 		"vybiraci");
 	pridejOtazku(
 		"Jaké použití kaskádového stylu je u vícestránkové webové prezentace nejefektivnější ?",
@@ -860,7 +860,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Použití stylopisu v externím souboru",
 		"vybiraci");
 	pridejOtazku(
 		"Co platí pro odkazy z pohledu pravidel přístupnosti webu pro zrakové handicapované uživatele",
@@ -874,12 +874,12 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Text odkazu obsahuje vystižné cíl odkazu",
 		"vybiraci");
 	pridejOtazku(
 		"Která značka je z pohledu fulltextového vyhledávače nejvýznamnější ?",
 		"Link",
-		"Meta ",
+		"Meta",
 		"P",
 		"Strong",
 		"",
@@ -888,7 +888,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Meta",
 		"vybiraci");
 	pridejOtazku(
 		"Co jsou tzv. Izomorfní apliace ( isomorphic, Applications) ?",
@@ -902,7 +902,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Aplikace kde JavaScript běží na klientském i servervé části",
 		"vybiraci");
 	pridejOtazku(
 		"Jaký tvar má IP adresa verze 6",
@@ -916,7 +916,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"XXXX XXXX XXXX XXXXXXX XXXX XXXX XXXX XXXX: 2001:odb8:0000:0000:0000: atd..",
 		"vybiraci");
 	pridejOtazku(
 		"Jaký tvar má IP adresa verze 4",
@@ -930,7 +930,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"XXX.XXX.XXX.XXX, např  192.168.4.11",
 		"vybiraci");
 	pridejOtazku(
 		"Ve kterém státě byla realizovaná decentrilizovaní sít která je považována za předchudce dnešního internetu",
@@ -944,7 +944,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"USA",
 		"vybiraci");
 	pridejOtazku(
 		"Jsou doménová jména citlivá na velká a malé písmena?",
@@ -958,7 +958,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Ne",
 		"vybiraci");
 	pridejOtazku(
 		"Co je to ECMAScript?",
@@ -972,10 +972,10 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Standard Javascriptu ( a offiko název)",
 		"vybiraci");
 	pridejOtazku(
-		"Z jakých části se skládá rámový model CSS",
+		"[?] Z jakých části se skládá rámový model CSS",
 		"Výpln",
 		"Vlastnost ",
 		"Hlavnička",
@@ -986,7 +986,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Obsah",
 		"vybiraci");
 	pridejOtazku(
 		"CO je z hlediska odkazu v katalogu dolezité",
@@ -1000,7 +1000,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Jednotná podoba URL",
 		"vybiraci");
 	pridejOtazku(
 		"Co je to unikátní uživatel",
@@ -1014,7 +1014,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Navštívění webové stránky jedním prohlížečem za určitě období",
 		"vybiraci");
 	pridejOtazku(
 		"Co je to Netmonitor",
@@ -1028,7 +1028,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Oficiální jednotné měření návštěvnosti webových stránek v čr",
 		"vybiraci");
 	pridejOtazku(
 		"Jaká je „výsledná“ barva v aditivních barevném modelu při nepoužití ani jedné základní barvy?",
@@ -1042,7 +1042,21 @@ function zalozOtazky() {
 		"Bílá",
 		"",
 		"",
+		"Černá",
+		"vybiraci");
+	pridejOtazku(
+		"Jaká je „výsledná“ barva v aditivních barevném modelu při použití všech základních barvy?",
+		"Žlutá",
+		"Zelené",
+		"Azurová",
+		"Červená",
+		"Purpulová",
+		"Modrá",
+		"Černá",
+		"Bílá",
 		"",
+		"",
+		"Bílá",
 		"vybiraci");
 	pridejOtazku(
 		"Jaká je výsledná barva při smíchání všechny základních barev s plnou internzitou v subtraktivním barevném modelu",
@@ -1056,7 +1070,21 @@ function zalozOtazky() {
 		"Bílá",
 		"",
 		"",
+		"Černá",
+		"vybiraci");
+	pridejOtazku(
+		"Jaká je výsledná barva při nepoužití žádné ze základních barev v subtraktivním barevném modelu",
+		"Žlutá",
+		"Zelené",
+		"Azurová",
+		"Červená",
+		"Purpulová",
+		"Modrá",
+		"Černá",
+		"Bílá",
 		"",
+		"",
+		"Bílá",
 		"vybiraci");
 	pridejOtazku(
 		"Co je framweork pro JavaScript ?",
@@ -1070,7 +1098,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"JQuerry",
 		"vybiraci");
 	pridejOtazku(
 		"CO je Media Queries?",
@@ -1084,10 +1112,10 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Technologie soužící pro distribuci stylu různá koncová zařízení",
 		"vybiraci");
 	pridejOtazku(
-		"Pro položky formulářu z hlediska přístupunosti webu pro zrakově handicapované uživatelé platí?",
+		"[?] Pro položky formulářu z hlediska přístupunosti webu pro zrakově handicapované uživatelé platí?",
 		"Povinná položka jsou označená dodatečným znakem",
 		"Povinné položky jsou označeny velikostí písma definovaného v CSS",
 		"Povinná položky jsou barevně odlišeny od nepovinných",
@@ -1098,7 +1126,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Povinná položka jsou označená dodatečným znakem",
 		"vybiraci");
 	pridejOtazku(
 		"Co je Node.js",
@@ -1112,7 +1140,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Serveré běhové prostředí pro Java Script",
 		"vybiraci");
 	pridejOtazku(
 		"K čemu je dobrý node.js ?",
@@ -1126,7 +1154,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Pro běh aplikací s hodně I/O operacemi a real-time zpracováním",
 		"vybiraci");
 	pridejOtazku(
 		"V kterých případech by měl být uživatel předem upozorněn?",
@@ -1140,7 +1168,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Ookud je cíl odkazu zobrazen v novém okně prohlížeče",
 		"vybiraci");
 	pridejOtazku(
 		"Co je to SPIR?",
@@ -1154,7 +1182,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Sdružení pro internetový rozvoj",
 		"vybiraci");
 	pridejOtazku(
 		"Jaké jsou aktuální metody pro tvorbu přístupného webu",
@@ -1168,7 +1196,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"WCAG 2.0",
 		"vybiraci");
 	pridejOtazku(
 		"Z pohledu přístupnosti webu pro zrakově handicapované uživatele pro baru textu a pozadí platí",
@@ -1182,7 +1210,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Jsou v dostačeném kontrastu",
 		"vybiraci");
 	pridejOtazku(
 		"Pro provoz ASP.NET je nezbytné potřeba",
@@ -1196,7 +1224,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Weobý server ISS",
 		"vybiraci");
 	pridejOtazku(
 		"V kterém roce byla navržená technologie WWW",
@@ -1210,7 +1238,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"1989",
 		"vybiraci");
 	pridejOtazku(
 		"jaký interval celých čísel lze použít pro zápis barvy v CSS poměrem celých čísel",
@@ -1224,7 +1252,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"0-255",
 		"vybiraci");
 	pridejOtazku(
 		"Co to znamená zkratka Ajax",
@@ -1238,12 +1266,12 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"Asynchronní Java Scriptu a XML",
 		"vybiraci");
 	pridejOtazku(
 		"Jaké jsou aktuální metody pro tvorbu přístupného webu (2b)",
 		"Pravidla přístupnosti MI čr – 64/2008 Sb",
-		"??? Manifest Dogma W4",
+		"Manifest Dogma W4",
 		"WCAG 2.0 - Web Content Accessibility Guidelines",
 		"WAI 9.3 - Web Accessibility Initiative",
 		"CSS 3.0 Standart",
@@ -1252,7 +1280,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"ac",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Který grafický formát je vhodný pro jednoduché kresby či loga publikované na webu",
@@ -1266,13 +1294,13 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"be",
 		"zaskrtavaci");
 	pridejOtazku(
-		"CO je to Dom ? 3 body",
+		"[?] CO je to Dom ? 3 body",
 		"Dynamický objednávkový model",
 		"Definovaný standard obecného modelovaní serverech webových aplikaci",
-		"DOM definuje obecný standard pro přístup k platnému",
+		"DOM definuje obecný standard pro přístup k platnému (X)HTML dokumentu",
 		"Interní hierarchická organizace prvků dokumentů ve webovém prohlížeči",
 		"DOM definuje obecný standard pro přístup k platnému XML dokumentu",
 		"",
@@ -1280,7 +1308,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"cde",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Jake jsou obecné základní komponenty DOM ? 2body",
@@ -1294,7 +1322,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"ac",
 		"zaskrtavaci");
 	pridejOtazku(
 		"V jakých jednotkách může být velikost buněk tabulky definovaná aby byl web přístupný zrakově handicovapanému uživateli (2body)",
@@ -1308,7 +1336,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"ad",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Co víte o doménách ? (3body)",
@@ -1322,7 +1350,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"aef",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Mezi client side technolohie patří  (3body)",
@@ -1336,7 +1364,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"acd",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Jaká barevná plata odpovídá formátu JPEG? (2body)",
@@ -1354,7 +1382,7 @@ function zalozOtazky() {
 		"zaskrtavaci");
 	pridejOtazku(
 		"Co jsou technologie na straně klienta? (2body)",
-		"Java serviet",
+		"Java servlet",
 		"PHP5",
 		"Java Applet",
 		"Java Script",
@@ -1364,10 +1392,10 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"ab",
 		"zaskrtavaci");
 	pridejOtazku(
-		"Co je to WWW ? (2body)",
+		"[?] Co je to WWW ? (2body)",
 		"Webový server",
 		"Služba internetu",
 		"Word WIde Web",
@@ -1378,7 +1406,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"ac",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Jaké jsou požadavky na XHTML (2 body)",
@@ -1392,11 +1420,11 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"ac",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Co je to HTTP (3body)",
-		"Bez stavový protokol",
+		"Bezstavový protokol",
 		"Stavový protokol",
 		"Značkovací jazyk pro tvorbu webových stránek",
 		"Protokol pro přenos dat v textovém tvaru",
@@ -1406,7 +1434,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"ad",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Co je to JavaScript ? (2body)",
@@ -1420,21 +1448,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
-		"zaskrtavaci");
-	pridejOtazku(
-		"Co jsou technologie na straně klienta ?  (2body)",
-		"Java Script ",
-		"PHP5",
-		"Java servlet",
-		"Java Applet",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
+		"ad",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Jaky je obecny zapis barvy v CSS hexa cisla (2body)",
@@ -1451,7 +1465,7 @@ function zalozOtazky() {
 		"ij",
 		"zaskrtavaci");
 	pridejOtazku(
-		"Z jakých částí se skládá čisté fulltextový vyhledávač (2body)",
+		"[???] Z jakých částí se skládá čisté fulltextový vyhledávač (2body)",
 		"Z tématicky zaměřených sekcí",
 		"DTD XHTML dokumentů",
 		"Webového uživatelského rozhraní",
@@ -1462,7 +1476,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"cd",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Co je to WWW klient? (2body)",
@@ -1476,7 +1490,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"be",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Kdo může být držitelem doménového jména ccTLD.cz (2body)",
@@ -1490,7 +1504,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"bc",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Které konkrétní zápisy barvy hexa číslem jsou v CSS korektní (3body)",
@@ -1504,7 +1518,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"bef",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Jaké jsou základní Filozofie HTML (2body)",
@@ -1518,7 +1532,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"ac",
 		"zaskrtavaci");
 	pridejOtazku(
 		"Co je to CZ nic z s.p.o (2body)",
@@ -1532,10 +1546,10 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"bc",
 		"zaskrtavaci");
 	pridejOtazku(
-		"Co je to SEWM ? (2body)",
+		"Co je to SEM ? (2body)",
 		"Standard tvroby jednouživatelských webových aplikací",
 		"Search Engine Marketing",
 		"Jeden ze způsobů placené propagace webu na vyhledávacích",
@@ -1546,7 +1560,7 @@ function zalozOtazky() {
 		"",
 		"",
 		"",
-		"",
+		"bc",
 		"zaskrtavaci");
 	pridejOtazku(
 		'Kolik sloupsů má tabulka popsána následujícím HTML kódem (původně vypsání konkrétního čísla)    <table><tr><td colspan="2"></td><td></td></tr><tr><td></td><td colspan="2"></td></tr></table>',
@@ -1560,10 +1574,10 @@ function zalozOtazky() {
 		"2.5",
 		"-1",
 		"",
-		"",
+		"3",
 		"vybiraci");
 	pridejOtazku(
-		'Kolik uzlů měla původní sít která je požadovaná za předchůdce dnešního internetu (původně vypsání konkrétního čísla)',
+		'[???] Kolik uzlů měla původní sít která je považována za předchůdce dnešního internetu (původně vypsání konkrétního čísla)',
 		"27",
 		"1",
 		"255",
@@ -1573,8 +1587,8 @@ function zalozOtazky() {
 		"6",
 		"2.5",
 		"16",
-		"",
-		"",
+		"500",
+		"16",
 		"vybiraci");
 
 
