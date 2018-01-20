@@ -57,7 +57,9 @@ function nactiOtazku() {
 	otazka = otazky[x];
 	//document.getElementById('otazka').innerHTML = '<div id="form">' + otazka.otazka + '<br>';
 
-	if (!otazka.d)
+	if (otazka.typ == "psaci")
+		numberOfAnswers = 1;
+	else if (!otazka.d)
 		numberOfAnswers = 3;
 	else if (!otazka.e)
 		numberOfAnswers = 4;
@@ -88,78 +90,83 @@ function nactiOtazku() {
 		used.push(rand);
 
 		if (otazka.typ == "vybiraci") {
-            switch (rand) {
-                case 0:
-                    str2 += '<br><input id="a" type="radio" name="a" value="a">' + '<label for="a" id="aa"> ' + otazka.a + '</label>';
-                    break;
-                case 1:
-                    str2 += '<br><input id="b" type="radio" name="a" value="a">' + '<label for="b" id="bb"> ' + otazka.b + '</label>';
-                    break
-                case 2:
-                    str2 += '<br><input id="c" type="radio" name="a" value="a">' + '<label for="c" id="cc"> ' + otazka.c + '</label>';
-                    break;
-                case 3:
-                    str2 += '<br><input id="d" type="radio" name="a" value="a">' + '<label for="d" id="dd"> ' + otazka.d + '</label>';
-                    break;
-                case 4:
-                    str2 += '<br><input id="e" type="radio" name="a" value="a">' + '<label for="e" id="ee"> ' + otazka.e + '</label>';
-                    break;
-                case 5:
-                    str2 += '<br><input id="f" type="radio" name="a" value="a">' + '<label for="f" id="ff"> ' + otazka.f + '</label>';
-                    break;
-                case 6:
-                    str2 += '<br><input id="g" type="radio" name="a" value="a">' + '<label for="g" id="gg"> ' + otazka.g + '</label>';
-                    break;
-                case 7:
-                    str2 += '<br><input id="h" type="radio" name="a" value="a">' + '<label for="h" id="hh"> ' + otazka.h + '</label>';
-                    break;
-                case 8:
-                    str2 += '<br><input id="i" type="radio" name="a" value="a">' + '<label for="i" id="ii"> ' + otazka.i + '</label>';
-                    break;
-                case 9:
-                    str2 += '<br><input id="j" type="radio" name="a" value="a">' + '<label for="j" id="jj"> ' + otazka.j + '</label>';
-                    break;
-            }
-        } else {
-            switch (rand) {
-                case 0:
-                    str2 += '<br><input id="a" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="a" id="aa"> ' + otazka.a + '</label>';
-                    break;
-                case 1:
-                    str2 += '<br><input id="b" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="b" id="bb"> ' + otazka.b + '</label>';
-                    break
-                case 2:
-                    str2 += '<br><input id="c" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="c" id="cc"> ' + otazka.c + '</label>';
-                    break;
-                case 3:
-                    str2 += '<br><input id="d" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="d" id="dd"> ' + otazka.d + '</label>';
-                    break;
-                case 4:
-                    str2 += '<br><input id="e" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="e" id="ee"> ' + otazka.e + '</label>';
-                    break;
-                case 5:
-                    str2 += '<br><input id="f" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="f" id="ff"> ' + otazka.f + '</label>';
-                    break;
-                case 6:
-                    str2 += '<br><input id="g" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="g" id="gg"> ' + otazka.g + '</label>';
-                    break;
-                case 7:
-                    str2 += '<br><input id="h" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="h" id="hh"> ' + otazka.h + '</label>';
-                    break;
-                case 8:
-                    str2 += '<br><input id="i" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="i" id="ii"> ' + otazka.i + '</label>';
-                    break;
-                case 9:
-                    str2 += '<br><input id="j" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="j" id="jj"> ' + otazka.j + '</label>';
-                    break;
-            }
-        }
+			switch (rand) {
+				case 0:
+					str2 += '<br><input id="a" type="radio" name="a" value="a">' + '<label for="a" id="aa"> ' + otazka.a + '</label>';
+					break;
+				case 1:
+					str2 += '<br><input id="b" type="radio" name="a" value="a">' + '<label for="b" id="bb"> ' + otazka.b + '</label>';
+					break
+				case 2:
+					str2 += '<br><input id="c" type="radio" name="a" value="a">' + '<label for="c" id="cc"> ' + otazka.c + '</label>';
+					break;
+				case 3:
+					str2 += '<br><input id="d" type="radio" name="a" value="a">' + '<label for="d" id="dd"> ' + otazka.d + '</label>';
+					break;
+				case 4:
+					str2 += '<br><input id="e" type="radio" name="a" value="a">' + '<label for="e" id="ee"> ' + otazka.e + '</label>';
+					break;
+				case 5:
+					str2 += '<br><input id="f" type="radio" name="a" value="a">' + '<label for="f" id="ff"> ' + otazka.f + '</label>';
+					break;
+				case 6:
+					str2 += '<br><input id="g" type="radio" name="a" value="a">' + '<label for="g" id="gg"> ' + otazka.g + '</label>';
+					break;
+				case 7:
+					str2 += '<br><input id="h" type="radio" name="a" value="a">' + '<label for="h" id="hh"> ' + otazka.h + '</label>';
+					break;
+				case 8:
+					str2 += '<br><input id="i" type="radio" name="a" value="a">' + '<label for="i" id="ii"> ' + otazka.i + '</label>';
+					break;
+				case 9:
+					str2 += '<br><input id="j" type="radio" name="a" value="a">' + '<label for="j" id="jj"> ' + otazka.j + '</label>';
+					break;
+			}
+		} else if (otazka.typ == "psaci") {
+			str2 += '<br><input id="a" type="text" size="60" name="a" value="" onkeypress="isEnter()">';
+		} else {
+			switch (rand) {
+				case 0:
+					str2 += '<br><input id="a" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="a" id="aa"> ' + otazka.a + '</label>';
+					break;
+				case 1:
+					str2 += '<br><input id="b" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="b" id="bb"> ' + otazka.b + '</label>';
+					break
+				case 2:
+					str2 += '<br><input id="c" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="c" id="cc"> ' + otazka.c + '</label>';
+					break;
+				case 3:
+					str2 += '<br><input id="d" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="d" id="dd"> ' + otazka.d + '</label>';
+					break;
+				case 4:
+					str2 += '<br><input id="e" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="e" id="ee"> ' + otazka.e + '</label>';
+					break;
+				case 5:
+					str2 += '<br><input id="f" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="f" id="ff"> ' + otazka.f + '</label>';
+					break;
+				case 6:
+					str2 += '<br><input id="g" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="g" id="gg"> ' + otazka.g + '</label>';
+					break;
+				case 7:
+					str2 += '<br><input id="h" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="h" id="hh"> ' + otazka.h + '</label>';
+					break;
+				case 8:
+					str2 += '<br><input id="i" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="i" id="ii"> ' + otazka.i + '</label>';
+					break;
+				case 9:
+					str2 += '<br><input id="j" type="checkbox" name="a" value="' + String.fromCharCode(97 + numOfQuestion) + '">' + '<label for="j" id="jj"> ' + otazka.j + '</label>';
+					break;
+			}
+		}
 		numOfQuestion++;
 
 	} while (used.length != numberOfAnswers)
 
 	str2 += '<br><br><input id="end" type="button" value="Odpovědět" onclick=check()>' + '</div>';
 	document.getElementById('otazka').innerHTML = str2;
+
+	if (otazka.typ == "psaci")
+		document.getElementById("a").focus();
 
 	/*
 	 document.getElementById('otazka').innerHTML = '<div id="form">' + otazka.otazka + '<br>' + 
@@ -191,7 +198,7 @@ function nactiSpatne() {
 
 function isEnter(e) {
 	if ((event.which == 13 || event.keyCode == 13)) {
-		if (document.getElementById("dalsi").style.visibility == 'visible') {
+		if (document.getElementById("end").value == 'Další') {
 			nactiOtazku();
 		} else {
 			check();
@@ -202,8 +209,34 @@ function isEnter(e) {
 function check() {
 	if (otazka.typ == "vybiraci")
 		checkVybiraci();
+	else if (otazka.typ == "psaci")
+		checkPsaci();
 	else
 		checkZaskrtavaci();
+}
+
+function checkPsaci() {
+	var ok = true;
+	document.getElementById("check").style.visibility = 'visible';
+
+	if (document.getElementById("a").value.toString().toLowerCase() == otazka.odpoved.toString().toLowerCase()) {
+		document.getElementById("check").innerHTML = '<p style="color:green">Správná odpověď</p>';
+		spravne++;
+	} else {
+		document.getElementById("check").innerHTML = '<p style="color:red">Špatně!</p>' +
+			'Správná odpověď je: ' + otazka.odpoved;
+		spatne++;
+		spatneOtazky.push(otazka);
+	}
+
+	if (otazky.length > n) {
+		odpovezene.push(x);
+		n++;
+	}
+
+	document.getElementById("end").value = "Další";
+	document.getElementById("end").onclick = nactiOtazku;
+
 }
 
 function checkZaskrtavaci() {
@@ -1595,20 +1628,20 @@ function zalozOtazky() {
 
 	/*
 	 
-	pridejOtazku(
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"vybiraci");
+	 pridejOtazku(
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "vybiraci");
 	 pridejOtazku(
 	 "",
 	 "",
