@@ -1596,7 +1596,7 @@ function zalozOtazky() {
 		"bc",
 		"zaskrtavaci");
 	pridejOtazku(
-		'Kolik sloupsů má tabulka popsána následujícím HTML kódem (původně vypsání konkrétního čísla)    <table><tr><td colspan="2"></td><td></td></tr><tr><td></td><td colspan="2"></td></tr></table>',
+		'Kolik sloupsů má tabulka popsána následujícím HTML kódem? [ENTER]<table>[ENTER]<tr>[ENTER]<td colspan="2"></td>[ENTER]<td></td>[ENTER]</tr>[ENTER]<tr>[ENTER]<td></td>[ENTER]<td colspan="2"></td>[ENTER]</tr>[ENTER]</table>',
 		"0",
 		"1",
 		"2",
@@ -1608,9 +1608,9 @@ function zalozOtazky() {
 		"-1",
 		"",
 		"3",
-		"vybiraci");
+		"psaci");
 	pridejOtazku(
-		'[???] Kolik uzlů měla původní sít která je považována za předchůdce dnešního internetu (původně vypsání konkrétního čísla)',
+		'[???] Kolik uzlů měla původní sít která je považována za předchůdce dnešního internetu?',
 		"27",
 		"1",
 		"255",
@@ -1622,7 +1622,7 @@ function zalozOtazky() {
 		"16",
 		"500",
 		"16",
-		"vybiraci");
+		"psaci");
 
 
 
@@ -1664,7 +1664,7 @@ function pridejOtazku(otazka, a = "", b = "", c = "", d = "", e = "", f = "", g 
 		h: escapeHtml(h),
 		i: escapeHtml(i),
 		j: escapeHtml(j),
-		otazka: escapeHtml(otazka),
+		otazka: (escapeHtml(otazka)).replaceAll('[ENTER]', '<br>'),
 		odpoved: escapeHtml(odpoved),
 		typ: typ
 	};
@@ -1680,3 +1680,10 @@ function escapeHtml(unsafe) {
 		.replace(/"/g, "&quot;")
 		.replace(/'/g, "&#039;");
 }
+
+String.prototype.replaceAll = function(search, replace) {
+    if (replace === undefined) {
+        return this.toString();
+    }
+    return this.split(search).join(replace);
+};
